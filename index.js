@@ -17,7 +17,7 @@ dotenv.config()
 const app = express()
 const port = process.env.PORT || 8000 
 const corsOptions ={
-    origin:["https://trvel-diary-admin.onrender.com",'http://localhost:4000'],
+    origin:["https://trvel-diary-admin.onrender.com",'http://localhost:4000/api/v1'],
    credentials:true}
 
 // database connection
