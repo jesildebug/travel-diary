@@ -16,9 +16,9 @@ import paymentRoute from './routes/payment.js';
 dotenv.config()
 const app = express()
 const port = process.env.PORT || 8000 
-const corsOptions ={
-    origin:true,
-   credentials:true}
+// const corsOptions ={
+//     origin:["https://trvel-diary-admin.onrender.com",],
+//    credentials:true}
 
 // database connection
  mongoose.set('strictQuery',false)
@@ -36,7 +36,7 @@ const connect = async()=>{
 // middlware
 
 app.use(express.json( ))
-app.use(cors(corsOptions))
+app.use(cors(["https://trvel-diary-admin.onrender.com","http://localhost:4000/api/v1"]))
 app.use(cookieParser())
 app.use('/api/v1/auth',authRoute)
 app.use('/api/v1/tours',tourRoute)
