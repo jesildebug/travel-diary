@@ -10,7 +10,7 @@ import userRoute from './routes/users.js'
 import authRoute from './routes/auth.js'
 import reviewRoute from './routes/reviews.js'
 import bookingRoute from './routes/bookings.js'
-import paymentRoute from './routes/payment.js';
+
 
 
 dotenv.config()
