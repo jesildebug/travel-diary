@@ -92,7 +92,7 @@ export const getSingleTour = async(req,res)=>{
 
       // i means case sensitive
         
-      const city = { $regex: new RegExp(req.query.city, 'i') };
+      const city =  new RegExp(req.query.city, 'i') ;
       const distance = parseInt(req.query.distance)
       const maxGroupSize= parseInt(req.query.maxGroupSize)
       

@@ -35,9 +35,9 @@ const connect = async()=>{
 }
 // middlware
 
-app.use(express.json( ))
+app.use(express.json())
 app.use(cors({
-    origin: ["https://trvel-diary-admin.onrender.com", "http://localhost:3000"], // Allowed origins
+    origin: ["https://travel-diary-t9e5.onrender.com","http://localhost:3000"], // Allowed origins
     credentials: true // Allow credentials (e.g., cookies)
 }))
 app.use(cookieParser())
